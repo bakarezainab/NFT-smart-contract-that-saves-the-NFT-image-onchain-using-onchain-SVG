@@ -9,7 +9,7 @@ contract OnChainNFT is ERC721 {
     using Strings for uint256;
     uint256 public _tokenIdCounter;
 // Constructor initializes the ERC721 token with name and symbol
-    constructor() ERC721("IdealzWeb3NFT", "IDNFT") {
+    constructor() ERC721("OnChainNFT", "ID3NFT") {
         _tokenIdCounter =1; 
         //this here is the token ID counter, it will start from 1
     }
@@ -53,7 +53,7 @@ contract OnChainNFT is ERC721 {
         string memory svg = '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">'
         '<rect width="200" height="200" fill="#4CAF50"/>'
         '<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24">'
-        "IdealzNFT"
+        "IdealzWeb3NFT"
         "</text>"
         '</svg>';
         return Base64.encode(bytes(svg));
